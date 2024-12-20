@@ -1,0 +1,30 @@
+
+
+drive_into_elevator_action_server:
+  ros__parameters:
+    timeout: 600
+
+
+
+drive_outof_elevator_action_server:
+  ros__parameters:
+    timeout: 60
+
+
+
+move_to_goal_action_server:
+  ros__parameters:
+    timeout: 120
+    linear_x_max: 0.3           # 最大线速度
+    angular_max: 0.4           # 最大角速度
+    acceleration: [0.2, 0.2]    # 线速度加/减速，角速度加/减速
+    thre_angle_to_goal: 0.05
+    tolerance_xy: 0.02
+    tolerance_yaw: 0.017
+    hz: 10
+
+
+
+
+
+  
